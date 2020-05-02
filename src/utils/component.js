@@ -6,7 +6,7 @@
  * @ModifierEmail:
  * @ModifierDescription:
  * @Date: 2020-05-02 03:57:28
- * @LastEditTime: 2020-05-02 04:59:28
+ * @LastEditTime: 2020-05-03 00:06:31
  */
 import Vue from 'vue'
 
@@ -32,23 +32,20 @@ export const create = (Component, props) => {
   // const vm = new Vue({
   //   // h是createElement函数，返回虚拟dom
   //   // h(标签名称或组件配置对象，传递属性、事件等，孩子元素)
-  //   render: h => {
-  //     console.log(h(Component, { props }))
-  //     return h(Component, { props })
-  //   }
+  //   render: h => h(Component, { props })
   // }).$mount()
 
   // // 获取组件对象
   // const comp = vm.$children[0]
 
-  // 为组件对象添加从页面中移除dom和销毁根实例 方法
+  // // 为组件对象添加从页面中移除dom和销毁根实例 方法
   // comp.remove = () => {
   //   document.body.removeChild(vm.$el)
 
   //   vm.$destroy()
   // }
 
-  // 创建的dom存放在根实例中的 $el 属性中
+  // // 创建的dom存放在根实例中的 $el 属性中
   // document.body.appendChild(vm.$el)
 
   // 返回组件对象

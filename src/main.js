@@ -6,19 +6,16 @@
  * @ModifierEmail:
  * @ModifierDescription:
  * @Date: 2020-05-01 21:16:15
- * @LastEditTime: 2020-05-02 04:41:22
+ * @LastEditTime: 2020-05-03 00:10:33
  */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import { create } from '@/utils/component'
-import Message from '@/components/Message.vue'
+import Message from './plugins/message'
+Vue.use(Message)
 
 Vue.config.productionTip = false
-Vue.prototype.$message = opts => {
-  create(Message, opts).show()
-}
 
 new Vue({
   router,
